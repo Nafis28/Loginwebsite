@@ -10,7 +10,7 @@ app.use(cors()); // Enable CORS for frontend communication
 app.use(express.json());
 
 // MongoDB setup - replace with your actual database URI
-mongoose.connect('mongodb+srv://haldennafis:Arman@email-to-smsdb.ccr9k86.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://username:Pass@email-to-smsdb.ccr9k86.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // User model
 const User = mongoose.model('User', new mongoose.Schema({ username: String, password: String }));
